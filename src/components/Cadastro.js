@@ -28,10 +28,10 @@ export default function Cadastro(){
         const promise = axios.post("http://localhost:5000/sign-up", cadastro)
 
         promise.then((res) =>
-            navigate('/home')
+            navigate('/')
         )
 
-        promise.catch((err) => alert(err.response.data))
+        promise.catch((err) => alert(err.response?.data))
 
     }
 

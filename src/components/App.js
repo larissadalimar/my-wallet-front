@@ -6,6 +6,7 @@ import Cadastro from "./Cadastro";
 import Home from './Home';
 import AuthContext from '../contexts/AuthContext';
 import { useState } from 'react';
+import NewRegister from './NewRegister';
 
 export default function App(){
 
@@ -24,6 +25,7 @@ export default function App(){
                 <Route path='/' element={<Login/>}/>
                 <Route path='/cadastro' element={<Cadastro/>}/>
                 <Route path='/home' element={<Home/>}/>
+                <Route path='/new-register/:type' element={<NewRegister/>}/>
             </Routes>
         </BrowserRouter>
         </AuthContext.Provider>

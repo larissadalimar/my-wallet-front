@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const FormStyle = styled.form`
     
-    width: 85%;
+    width: ${props => props.typeForm === "new-register-form"? "100%": "85%"};
     display:flex;
     align-items: center;
     justify-content: center;
@@ -20,9 +20,10 @@ const FormStyle = styled.form`
         font-family: 'Raleway', sans-serif;
         padding: 0 0 0 15px;
         box-sizing: border-box;
+        appearance: textfield;
     }
 
-    input::placeholder {
+    input:placeholder {
         color: black;
     } 
     

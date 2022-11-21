@@ -36,7 +36,7 @@ export default function Login(){
             navigate('/home')
         })
 
-        promise.catch((err) => console.log(err))
+        promise.catch((err) => alert(err.message))
     }
 
     return(
